@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align self</title>
+</head>
+<style>
+    .flex-container{
+        max-width: 350px;
+        border:1px solid black;
+        margin-bottom: 10px;
+        display: flex;
+       
+    }
+    .align-container{
+         align-items: flex-end;
+    }
+    .item{
+        background-color: brown;
+        color: white;
+        font-size:24px;
+        text-align: center;
+        margin: 5px;
+      }
+      .center{
+        align-self: center;
+      }
+      .start{
+        align-self: flex-start;
+      }
+      .end{
+        align-self: flex-end;
+      }
+      .baseline{
+        align-self: baseline;
+      }
+      .stretch{
+        align-self: auto;
+      }
+      .direction{
+        flex-direction: column;
+      }
+</style>
+<body>
+    <h1>flex-direction row</h1>
+    <section class="flex-container align-container">
+        <dvi class="item auto">AAA</dvi>
+        <dvi class="item auto">123</dvi>
+        <dvi class="item auto">Alex dos santos ferreira</dvi>
+        <dvi class="item auto">item 4</dvi>
+    </section>
+    
+    <section class="flex-container ">
+        <dvi class="item center">AAA</dvi>
+        <dvi class="item start">123</dvi>
+        <dvi class="item stretch">Alex dos santos ferreira</dvi>
+        <dvi class="item end">item 4</dvi>
+    </section>
+
+    <section class="flex-container ">
+        <dvi class="item center">AAA</dvi>
+        <dvi class="item start">123</dvi>
+        <dvi class="item end">Alex</dvi>
+        <dvi class="item stretch">Alex dos santos ferreira</dvi>
+
+    </section>
+
+
+    <h1>flex-direction column</h1>
+        <section class="flex-container direction">
+            <dvi class="item auto">AAA</dvi>
+            <dvi class="item auto">123</dvi>
+            <dvi class="item auto">Alex dos santos ferreira</dvi>
+            <dvi class="item auto">item 4</dvi>
+        </section>
+        
+        <section class="flex-container ">
+            <dvi class="item center">AAA</dvi>
+            <dvi class="item start">123</dvi>
+            <dvi class="item stretch">Alex dos santos ferreira</dvi>
+            <dvi class="item end">item 4</dvi>
+        </section>
+    
+        <section class="flex-container ">
+            <dvi class="item center">AAA</dvi>
+            <dvi class="item start">123</dvi>
+            <dvi class="item end">Alex</dvi>
+            <dvi class="item stretch">Alex dos santos ferreira</dvi>
+        </section>
+        
+        <section class="flex-container direction">
+            <dvi class="item auto">AAA</dvi>
+            <dvi class="item auto">123</dvi>
+            <dvi class="item auto">Alex dos santos ferreira</dvi>
+            <dvi class="item auto">item 4</dvi>
+        </section>
+    
+    <section class="flex-container direction">
+        <dvi class="item center">AAA</dvi>
+        <dvi class="item start">123</dvi>
+        <dvi class="item stretch">Alex dos santos ferreira</dvi>
+        <dvi class="item end">item 4</dvi>
+    </section>
+
+    <section class="flex-container direction ">
+        <dvi class="item center">AAA</dvi>
+        <dvi class="item start">123</dvi>
+        <dvi class="item end">Alex</dvi>
+        <dvi class="item stretch">Alex dos santos ferreira</dvi>
+    </section>
+</body>
+</html>
