@@ -108,7 +108,7 @@ console.log(arrayInterno);
 
 var {string,boolean,objectInterno} = object;
     console.log(string,boolean,objectInterno);
-*/
+
 var jogador1 = 0;
 var jogador2 = 0;
 var placar;
@@ -188,3 +188,15 @@ function mensagem(a,b){
     console.log(a,b);
 }
 mensagem("Estou quase lá!"," Foco, Forco e Fé");
+
+var funcao = function(){
+    console.log("Sou uma mensagem de função de expressão");
+}
+funcao();
+
+
+var funcao = () =>{
+    console.log("Sou uma arrow function");
+}
+funcao();
+*/
