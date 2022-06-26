@@ -5,14 +5,19 @@
 // //var numberOne;
 // //let numberOne;
 
-var firstName = 'João';
-let lastName = 'Souza';
+// var firstName = 'João';
+// let lastName = 'Souza';
 
-if(firstName === "João"){
-    let lastName = 'Rodrigues';
-    var firstName = 'Pedro';
-    lastName = 'Silva';
+// if(firstName === "João"){
+//     let lastName = 'Rodrigues';
+//     var firstName = 'Pedro';
+//     lastName = 'Silva';
 
-    console.log(lastName);
-}
-console.log(firstName,lastName);
+//     console.log(lastName);
+// }
+// console.log(firstName,lastName);
+
+const FIRST_NAME =  "Alex Ferreira";
+//FIRST_NAME =  "Ferreira";
+
+ console.log(FIRST_NAME);
