@@ -79,3 +79,38 @@ function listar(list:string[]){
     }
 }
 listar(jessica.materias);
+
+type num = number| string;
+function somaValores( num1:number| string, num2:num){
+    if(typeof num1 === "string"|| typeof num2 ==="string"){
+        return num1.toString() + num2.toString();
+    }else {
+        return num1 + num2;
+    }    
+}
+console.log(somaValores(1,5));
+console.log(somaValores('else, ','Olá, tudo bem?'));
+console.log(somaValores("1",5));
+
+let anyEstadoVolta: any;
+anyEstadoVolta = 3;
+anyEstadoVolta = 'teste';
+anyEstadoVolta = 5;
+
+let stringTest:string = 'verificar'
+stringTest = anyEstadoVolta;
+
+let unknowValor:unknown;
+unknowValor = 3,
+unknowValor = 'que';
+unknowValor = true;
+unknowValor = 'vai sim';
+
+let stringTest2: string = 'agora vai';
+//stringTest2 = unknowValor;
+
+if (typeof unknowValor === 'string'){
+stringTest2 = unknowValor;
+}
+
+
