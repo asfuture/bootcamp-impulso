@@ -4,12 +4,14 @@
   "description": "Primeiro projeto usando typescript",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -p 8436"
+    "start": "lite-server",
+    "watch": "tsc --watch"
   },
   "author": "Alex Ferreira",
   "license": "ISC",
   "dependencies": {
     "http-server": "^14.1.1",
+    "lite-server": "^2.6.1",
     "ng-build": "^0.1.12"
   }
 }
