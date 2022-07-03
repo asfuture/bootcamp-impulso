@@ -1,3 +1,5 @@
+//########################################################################
+// Atividade 0 calculando dois numeros 
 let button = document.getElementById("button");
 let num1 = document.getElementById('num1') as HTMLInputElement;
 let num2 = document.getElementById('num2')  as HTMLInputElement;
@@ -25,15 +27,36 @@ if(button){
 }
 
 
-// Como podemos rodar isso em um arquivo .ts sem causar erros? 
 
-const matricula = {
-    nome:'Alex Ferreira',
-    code:10
+
+
+
+//########################################################################
+//ATIVIDADE 1 Como podemos rodar isso em um arquivo .ts sem causar erros? 
+let btndesafio = document.getElementById('btndesafio1');
+
+
+function desafio(){
+    const matricula = {
+        nome:'Alex Ferreira',
+        code:10
+    }
+   alert(matricula.nome+", "+ matricula.code);
 }
 
-// Como podemos melhorar o esse código usando TS? 
+if(btndesafio){
+   btndesafio.addEventListener('click',()=>{
+    desafio();
+   })
+}
 
+
+
+
+
+
+//########################################################################
+// ATIVIDADE 2 Como podemos melhorar o esse código usando TS? 
 const pessoa = (nome:string, idade:number, profissao:string) => {
     nome = 'Paris',
     idade = 26,
@@ -78,19 +101,29 @@ const pessoa5:pessoa = {
     idade: 33,
     profissao:profissao.Desenvolvedor
 }
+let respotaDesafio2 = document.getElementById('respotaDesafio2');
 function listar(){
         console.log(pessoa1,pessoa2,pessoa3,pessoa4,pessoa5);
+        alert(pessoa1.nome+" " +pessoa2.nome+" " +pessoa3.nome+" " +pessoa4.nome+" " +pessoa5.nome);
 }
-listar();
+if(respotaDesafio2){
+    respotaDesafio2.addEventListener('click',()=>{
+    listar();
+    })
+ }
 
 
-// O código abaixo tem alguns erros e não funciona como deveria. Você pode identificar quais são e corrigi-los em um arquivo TS?
+
+
+
+
+//##########################################################################################
+//ATIVIDADE 3 O código abaixo tem alguns erros e não funciona como deveria. Você pode identificar quais são e corrigi-los em um arquivo TS?
 
 let botaoAtualizar = document.getElementById('atualizar-saldo');
 let botaoLimpar = document.getElementById('limpar-saldo');
 let soma = document.getElementById('soma')as HTMLInputElement;
 let campoSaldo = document.getElementById('campo-saldo');
-
 
 let total = 0
 
@@ -118,7 +151,6 @@ if(botaoAtualizar){
         somarAoSaldo(Number(soma.value));
     });
 }
-
 
 if(botaoLimpar){
     botaoLimpar.addEventListener('click', () => {
