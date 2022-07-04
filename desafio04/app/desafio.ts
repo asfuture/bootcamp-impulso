@@ -20,8 +20,8 @@ let listId :any;
 let listaDeFilmes :string| number;
 
 let loginButton = document.getElementById('login-button') as HTMLButtonElement;
-let searchButton = document.getElementById('search-button');
-let searchContainer = document.getElementById('search-container') as Element;
+let searchButton = document.getElementById('search-button')as HTMLButtonElement;
+let searchContainer = document.getElementById('search-container');
 
 if(loginButton){
 loginButton.addEventListener('click', async () => {
@@ -34,14 +34,14 @@ loginButton.addEventListener('click', async () => {
 
 if(searchButton){
 searchButton.addEventListener('click', async () => {
-  let lista = document.getElementById("lista");
+  let lista = document.getElementById("lista") as HTMLElement;
   if (lista) {
     lista.outerHTML = " ";
   }
   
-  let query = document.getElementById("search")as HTMLElement;
+  let query = document.getElementById("search") as HTMLInputElement;
   console.log(query,"aqui")
-  let listaDeFilmes = await procurarFilme(query);
+  let listaDeFilmes = await procurarFilme(query.value);
   console.log(listaDeFilmes,"aquilist")
   let ul = document.createElement('ul');
   ul.id = "lista";
@@ -57,19 +57,19 @@ searchButton.addEventListener('click', async () => {
 }
 
 function preencherSenha() {
- let password = document.getElementById("senha");
+ let password = document.getElementById("senha")as HTMLInputElement;
   validateLoginButton();
   return password;
 }
 
 function preencherLogin() {
-let username =  document.getElementById('login');
+let username =  document.getElementById('login')as HTMLInputElement;
   validateLoginButton();
   return username;
 }
 
 function preencherApi() {
- let apiKey = document.getElementById('api-key');
+ let apiKey = document.getElementById('api-key') as HTMLInputElement;
   validateLoginButton();
   return apiKey;
 }
