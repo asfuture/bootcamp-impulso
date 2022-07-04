@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dio - BootCamp</title>
+</head>
+<body>
+    <h1>DIO - BootCamp Impulso JavaScript Evolution</h1>
+    <h2>Resolvendo Desafios em Typescript</h2>
+    <div style="display: flex;">
+        <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+            <input type="text" id="login" placeholder="Login" onchange="preencherLogin(event)">
+            <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+            <input type="text" id="api-key" placeholder="Api Key" onchange="preencherApi()">
+            <button type="button" id="login-button" disabled="">Login</button>
+        </div>
+        <div id="search-container" style="margin-left: 20px">
+            <input type="text" id="search" placeholder="Escreva...">
+            <button id="search-button">Pesquisar Filme</button>
+            <ul id="lista">
+                <li></li>
+            </ul>
+        </div>
+      </div>
+    <script src="./js/desafio.js"></script>
+</body>
+</html>
