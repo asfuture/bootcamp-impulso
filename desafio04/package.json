@@ -1,0 +1,15 @@
+{
+  "name": "desafio04",
+  "version": "1.0.0",
+  "description": "Resposta do desafio 04 do BootCamp Impulso Javascript Evolution",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "watch": "tsc --watch"
+  },
+  "author": "Alex Ferreira",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
